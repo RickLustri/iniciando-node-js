@@ -6,6 +6,9 @@ var app = express();
 app.set('view engine', 'ejs');
 app.set('views', './src/views');
 
+// Configurando uma pasta de arquivos estáticos
+app.use(express.static('src/public'));
+
 // Rota principal
 app.get('/', function (request, response) {
   response.render('index');
