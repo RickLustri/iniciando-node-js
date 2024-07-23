@@ -11,7 +11,12 @@ app.get('/', function (request, response) {
   response.render('index');
 });
 
+// Rota de adicionar
+app.get('/adicionar', function (request, response) {
+  response.render('adicionar');
+});
+
 // Iniciando o servidor
-app.listen(3000, function () {
-  console.log('Servidor iniciado na porta 3000');
+app.listen(3003, function () {
+  console.log('Servidor iniciado na porta', 3003);
 });
